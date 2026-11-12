@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>ALICE CONTROL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="ALICE CONTROL">
+        <span class="brand-mark">A</span>
+        <span>ALICE<span class="brand-light">CONTROL</span></span>
+      </a>
+      <span class="connection"><i></i><span id="connectionText">НЕ ПОДКЛЮЧЕНО</span></span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">ЛИЧНАЯ ПАНЕЛЬ УПРАВЛЕНИЯ</div>
+        <h1>Твоя Алиса.<br><span>Твои настройки.</span></h1>
+        <p>Управление Яндекс Станцией Лайт первого поколения — в одном месте.</p>
+      </section>
+
+      <section class="device-card">
+        <div class="device-orb"><span>♫</span></div>
+        <div class="device-copy">
+          <div class="eyebrow">МОЁ УСТРОЙСТВО</div>
+          <h2>Станция Лайт</h2>
+          <p>1-е поколение · голубая</p>
+          <span class="device-state"><i></i> Ожидает подключения</span>
+        </div>
+        <div class="device-wave" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading"><div><div class="eyebrow">БЫСТРЫЙ ДОСТУП</div><h2>Управление</h2></div></div>
+        <div class="control-grid">
+          <button class="control-card" data-panel="volume"><span class="control-icon">◖</span><strong>Громкость</strong><small>Уровень звука</small><span class="card-arrow">↗</span></button>
+          <button class="control-card" data-panel="voice"><span class="control-icon">◉</span><strong>Голос Алисы</strong><small>Доступные варианты</small><span class="card-arrow">↗</span></button>
+          <button class="control-card" data-panel="commands"><span class="control-icon">⌘</span><strong>Мои команды</strong><small>Быстрые действия</small><span class="card-arrow">↗</span></button>
+          <button class="control-card" data-panel="scenarios"><span class="control-icon">✧</span><strong>Сценарии</strong><small>Автоматизация</small><span class="card-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="eyebrow">ПОДКЛЮЧЕНИЕ</div>
+        <h2>Связь с Яндексом</h2>
+        <div class="settings-row">
+          <div class="settings-icon">◎</div>
+          <div class="settings-copy"><strong>Аккаунт Яндекса</strong><small>Подключение через поддерживаемую авторизацию</small></div>
+          <span class="row-arrow">›</span>
+        </div>
+        <div class="notice"><span>ⓘ</span><p>Пока панель работает в демонстрационном режиме. Для реального управления потребуется официальный доступ Яндекса. Пароль от аккаунта здесь вводить не нужно.</p></div>
+      </section>
+
+      <footer><span>ALICE CONTROL</span><span>VERSION 1.0 · WEB</span></footer>
+    </main>
+  </div>
+
+  <dialog id="panelDialog" class="panel-dialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Закрыть">×</button>
+    <div class="eyebrow" id="dialogEyebrow">ALICE CONTROL</div>
+    <h2 id="dialogTitle">Настройка</h2>
+    <div id="dialogContent"></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
