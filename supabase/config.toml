@@ -1,1 +1,2 @@
-[functions.alice-yandex]\nverify_jwt = false\n
+[functions.alice-yandex]
+verify_jwt = false
