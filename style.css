@@ -46,3 +46,9 @@ footer{border-top:1px solid var(--line);padding:20px 0 25px;display:flex;justify
 .dialog-note{color:var(--muted);font-size:12px;line-height:1.7}
 .demo-button{border:1px solid #397b9b;background:#12364b;color:#b9f0fb;padding:11px 14px;border-radius:10px;margin-top:12px;cursor:pointer}
 @media(max-width:520px){.app-shell{padding:0 18px}.topbar{height:68px}main{padding-top:40px}.device-card{padding:20px;gap:15px;min-height:150px}.device-orb{width:70px;height:70px;flex-basis:70px;font-size:31px}.device-copy h2{font-size:19px}.device-wave{display:none}.control-card{min-height:133px;padding:15px}.hero h1{letter-spacing:-1.8px}}
+
+.top-actions{display:flex;align-items:center;gap:12px}
+.auth-button{border:1px solid #3b7895;background:#12334a;color:#dff8ff;border-radius:10px;padding:9px 13px;font-size:11px;font-weight:700;cursor:pointer}
+.auth-button:disabled{opacity:.55}
+.account-status{color:var(--muted);font-size:12px;line-height:1.6;margin:12px 0}
+@media(max-width:480px){.app-shell{padding:0 16px}.topbar{gap:10px}.top-actions{gap:7px}.connection{font-size:8px;letter-spacing:.5px}.auth-button{padding:8px 9px;font-size:10px}}
